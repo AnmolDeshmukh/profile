@@ -1,20 +1,23 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: 'Data Science Intern',
+    company: "Onward Technologies Inc.",
+    duration: "(Jul 2024 - Aug 2024)",
+    location: "Chicago, IL"
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: "Software Engineering Intern",
+    company: "RBL Bank",
+    duration: "(Jun 2022 - Jul 2022)",
+    location: "Mumbai"
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: "Software Engineering Intern",
+    company: "Onward Technologies Inc.",
+    duration: "(Oct 2021 - Feb 2022)",
+    location: "Pune"
   }
 ]

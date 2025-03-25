@@ -26,7 +26,7 @@ function Education() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
+            Education
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -58,6 +58,11 @@ function Education() {
                           {education.duration}
                         </p>
                       </div>
+                      {/* <div className="flex justify-center">
+                        <p className="text-xs sm:text-sm text-[#16f2b3]">
+                          {education.major}
+                        </p>
+                      </div> */}
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div className="text-violet-500  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
@@ -66,7 +71,8 @@ function Education() {
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {education.title}
                           </p>
-                          <p className="text-sm sm:text-base">{education.institution}</p>
+                          <p className="text-sm sm:text-base">Major: {education.major}</p>
+                          <p className="text-sm sm:text-base">Institute: {education.institution}</p>
                         </div>
                       </div>
                     </div>
