@@ -1,0 +1,7 @@
+app/components/helper/glow-card.jsx://     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
+app/components/helper/glow-card.jsx://     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+app/components/helper/glow-card.jsx://     document.body.addEventListener('pointermove', UPDATE);
+app/components/helper/glow-card.jsx://       document.body.removeEventListener('pointermove', UPDATE);
+app/components/helper/glow-card.jsx:      const cards = document.querySelectorAll(".glow-card");
+app/components/helper/glow-card.jsx:    document.body.addEventListener("mousemove", handleMouseMove);
+app/components/helper/glow-card.jsx:    return () => document.body.removeEventListener("mousemove", handleMouseMove);
