@@ -81,14 +81,13 @@
 // export default GlowCard;
 'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function GlowCard({ children, className }) {
   const cardRef = useRef(null);
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    if (typeof window === 'undefined') return;
 
     const handleMouseMove = (e) => {
       const cards = document.querySelectorAll(".glow-card");
@@ -102,10 +101,10 @@ export default function GlowCard({ children, className }) {
     };
 
     document.body.addEventListener("mousemove", handleMouseMove);
-    return () => document.body.removeEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.body.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
-
-  if (!isClient) return null; // Skip rendering on server
 
   return (
     <div
