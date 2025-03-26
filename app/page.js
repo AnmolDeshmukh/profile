@@ -51,10 +51,12 @@
 // }
 'use client'
 import HeroSection from "./components/homepage/hero-section";
+import AboutSection from "./components/homepage/about";
 export default function Home() {
   return (
     <div suppressHydrationWarning>
       <HeroSection />
+      <AboutSection />
     </div>
   );
 }
