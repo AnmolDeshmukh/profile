@@ -50,11 +50,11 @@
 //   );
 // }
 'use client'
-
+import HeroSection from "./components/homepage/hero-section";
 export default function Home() {
   return (
     <div suppressHydrationWarning>
-      <p>Test Page</p>
+      <HeroSection />
     </div>
   );
 }
